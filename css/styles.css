@@ -98,12 +98,12 @@ body {
 /* end of cart */
 /* cart item */
 .cart-item-remove {
-    color: var(--mainPink);
+    color: darkcyan;
     transition: all 1s ease-in-out;
 }
 .cart-item-remove:hover {
     transform: scale(1.1);
-    color: var(--mainBlack);
+    color: crimson;
 }
 #cart-item-price {
     font-size: 0.8rem;
@@ -111,20 +111,20 @@ body {
 /* cart item */
 /* cart buttons */
 .btn-pink {
-    color: var(--mainPink) !important;
-    border-color: var(--mainPink) !important;
+    color: darkred !important;
+    border-color: darkred !important;
 }
 .btn-black {
-    color: var(--mainBlack) !important;
-    border-color: var(--mainBlack) !important;
+    color: darkslategrey !important;
+    border-color: darkslategrey !important;
 }
 .btn-black:hover {
-    color: var(--mainPink) !important;
-    background: var(--mainBlack) !important;
+    color: darkred !important;
+    background: darkslategray !important;
 }
 .btn-pink:hover {
-    background: var(--mainPink) !important;
-    color: var(--mainBlack) !important;
+    background: darkred !important;
+    color: darkslategrey !important;
 }
 /* end of cart buttons */
   
@@ -140,7 +140,7 @@ body {
     left: -1.7rem;
     width: 100%;
     height: 100%;
-    outline: 0.5rem solid var(--mainYellow);
+    outline: 0.5rem solid crimson;
     z-index: -1;
     transition: all 1s ease-in-out;
 }
@@ -153,12 +153,17 @@ body {
   
 /* store items */
 .store {
-    background: var(--mainGrey);
+    background: darkgray;
 }
 .img-container {
     position: relative;
     overflow: hidden;
     cursor: pointer;
+}
+
+.img-container img{
+    width: 100%;
+    height: auto;
 }
 .store-img {
     transition: all 1s ease-in-out;
@@ -171,7 +176,7 @@ body {
     bottom: 0;
     right: 0;
     padding: 0.75rem;
-    background: var(--mainYellow);
+    background: cross-fade();
     border-top-left-radius: 1rem;
     transition: all 1s ease-in-out;
     transform: translate(100%, 100%);
@@ -180,15 +185,15 @@ body {
     transform: translate(0, 0);
 }
 .store-item-icon:hover {
-    color: var(--mainWhite);
+    color: whitesmoke;
 }
 .store-item-value {
-    color: --mainYellow;
+    color: crimson;
 }
 /*end of  store items */
 .search-box {
-    background: var(--mainPink);
-    color: var(--mainBlack);
+    background: darkred;
+    color: darkslategrey;
 }
   
 /* ligthbox */
@@ -217,24 +222,24 @@ body {
     border-radius: 0.3rem;
 }
 .lightbox-close {
-    color: var(--mainPink);
+    color: crimson;
     font-size: 3rem;
     transition: all 1s ease-in-out;
     cursor: pointer;
 }
 .lightbox-close:hover {
-    color: var(--mainYellow);
+    color: darkred;
 }
   
 .lightbox-control {
     position: absolute;
     font-size: 4rem;
-    color: var(--mainPink);
+    color: darkred;
     transition: all 1s linear;
     cursor: pointer;
 }
 .lightbox-control:hover {
-    color: var(--mainYellow);
+    color: darkred;
 }
 .btnLeft {
     top: 50%;
