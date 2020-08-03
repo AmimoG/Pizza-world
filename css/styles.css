@@ -251,3 +251,16 @@ body {
     right: 0;
     transform: translateX(60%);
 }
+
+.container-delivery{
+    text-align: center;
+    background-image: url(../images/Pizza3.jpg);
+}
+
+.deliver{
+    display: none;
+}
+
+form{
+    display: none;
+}
