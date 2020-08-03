@@ -8,3 +8,91 @@ body {
     margin: 0;
     padding: 0;
 }
+
+/* nav links */
+.navbar-toggler {
+    outline: none !important;
+}
+  .toggler-icon {
+    font-size: 2.5rem;
+    color: darkslategray;
+}
+  .nav-link {
+    color: darkslategray;
+    font-size: 1.5rem;
+    transition: all 0.5s ease-in-out;
+  }
+  .nav-link:hover {
+    color: crimson;
+  }
+  /* end of nav links */
+  /* info icons */
+  .cart-info__icon {
+    color: darkred;
+    cursor: pointer;
+  }
+  
+  .cart-info {
+    border: 0.1rem solid darkslategrey;
+    color: darkslategrey;
+    border-radius: 0.25rem;
+    padding: 0.4rem 0.6rem;
+    cursor: pointer;
+  }
+  .cart-info:hover {
+    background: darkred;
+    border-color: darkred;
+    color: whitesmoke;
+  }
+  .cart-info:hover .cart-info__icon {
+    color: whitesmoke;
+  }
+  /* end of info icons */
+  /* banner */
+  
+  .max-height {
+    min-height: calc(100vh - 76px);
+    background: linear-gradient(darkred),
+      url("/images/pizza1.jpg") center/cover fixed no-repeat;
+    position: relative;
+  }
+  .banner {
+    color: whitesmoke;
+    margin-top: -4rem;
+  }
+  .banner-title {
+    color: crimson;
+    font-size: 4rem;
+  }
+  .banner-link {
+    font-size: 1.5rem;
+    color: darkslategrey;
+    border: 0.2rem solid darkslategrey;
+  }
+  .banner-link:hover {
+    background: darkslategrey;
+    color: crimson;
+  }
+  /* endo of banner */
+  /* cart  */
+  .cart {
+    position: absolute;
+    min-height: 10rem;
+    background: whitesmoke;
+    top: 0;
+    right: 0;
+    transition: all 0.3s ease-in-out;
+    background: rgba(255, 255, 255, 0.5);
+    width: 0;
+    overflow: hidden;
+  }
+  .show-cart {
+    width: 18rem;
+    padding: 2rem 1.5rem;
+    transform: rotateY(-360deg);
+  }
+  .cart-item {
+    transition: all 2s ease-in-out;
+  }
+  
+  /* end of cart */
