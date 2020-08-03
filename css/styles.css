@@ -13,69 +13,70 @@ body {
 .navbar-toggler {
     outline: none !important;
 }
-  .toggler-icon {
+.toggler-icon {
     font-size: 2.5rem;
     color: darkslategray;
 }
-  .nav-link {
+.nav-link {
     color: darkslategray;
     font-size: 1.5rem;
     transition: all 0.5s ease-in-out;
-  }
-  .nav-link:hover {
+}
+.nav-link:hover {
     color: crimson;
-  }
+}
   /* end of nav links */
   /* info icons */
-  .cart-info__icon {
+.cart-info__icon {
     color: darkred;
     cursor: pointer;
-  }
+}
   
-  .cart-info {
+.cart-info {
     border: 0.1rem solid darkslategrey;
     color: darkslategrey;
     border-radius: 0.25rem;
     padding: 0.4rem 0.6rem;
     cursor: pointer;
-  }
-  .cart-info:hover {
+}
+.cart-info:hover {
     background: darkred;
     border-color: darkred;
     color: whitesmoke;
-  }
-  .cart-info:hover .cart-info__icon {
+}
+.cart-info:hover .cart-info__icon {
     color: whitesmoke;
-  }
+}
   /* end of info icons */
   /* banner */
   
-  .max-height {
+.max-height {
     min-height: calc(100vh - 76px);
     background: linear-gradient(darkred),
       url("/images/pizza1.jpg") center/cover fixed no-repeat;
     position: relative;
-  }
-  .banner {
+    background-image: url(../images/Pizza2.jpg);
+}
+.banner {
     color: whitesmoke;
     margin-top: -4rem;
-  }
-  .banner-title {
+}
+.banner-title {
     color: crimson;
     font-size: 4rem;
-  }
-  .banner-link {
+}
+.banner-link {
     font-size: 1.5rem;
     color: darkslategrey;
     border: 0.2rem solid darkslategrey;
-  }
-  .banner-link:hover {
+}
+.banner-link:hover {
     background: darkslategrey;
     color: crimson;
-  }
+}
   /* endo of banner */
   /* cart  */
-  .cart {
+.cart {
     position: absolute;
     min-height: 10rem;
     background: whitesmoke;
@@ -85,14 +86,163 @@ body {
     background: rgba(255, 255, 255, 0.5);
     width: 0;
     overflow: hidden;
-  }
-  .show-cart {
+}
+.show-cart {
     width: 18rem;
     padding: 2rem 1.5rem;
     transform: rotateY(-360deg);
-  }
-  .cart-item {
+}
+.cart-item {
     transition: all 2s ease-in-out;
-  }
+}
+/* end of cart */
+/* cart item */
+.cart-item-remove {
+    color: var(--mainPink);
+    transition: all 1s ease-in-out;
+}
+.cart-item-remove:hover {
+    transform: scale(1.1);
+    color: var(--mainBlack);
+}
+#cart-item-price {
+    font-size: 0.8rem;
+}
+/* cart item */
+/* cart buttons */
+.btn-pink {
+    color: var(--mainPink) !important;
+    border-color: var(--mainPink) !important;
+}
+.btn-black {
+    color: var(--mainBlack) !important;
+    border-color: var(--mainBlack) !important;
+}
+.btn-black:hover {
+    color: var(--mainPink) !important;
+    background: var(--mainBlack) !important;
+}
+.btn-pink:hover {
+    background: var(--mainPink) !important;
+    color: var(--mainBlack) !important;
+}
+/* end of cart buttons */
   
-  /* end of cart */
+/* about */
+.about-img__container {
+    position: relative;
+}
+  
+.about-img__container::before {
+    content: "";
+    position: absolute;
+    top: -1.5rem;
+    left: -1.7rem;
+    width: 100%;
+    height: 100%;
+    outline: 0.5rem solid var(--mainYellow);
+    z-index: -1;
+    transition: all 1s ease-in-out;
+}
+.about-img__container:hover:before {
+    top: 0;
+    left: 0;
+}
+  
+/*end of  about */
+  
+/* store items */
+.store {
+    background: var(--mainGrey);
+}
+.img-container {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+.store-img {
+    transition: all 1s ease-in-out;
+}
+.img-container:hover .store-img {
+    transform: scale(1.2);
+}
+.store-item-icon {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 0.75rem;
+    background: var(--mainYellow);
+    border-top-left-radius: 1rem;
+    transition: all 1s ease-in-out;
+    transform: translate(100%, 100%);
+}
+.img-container:hover .store-item-icon {
+    transform: translate(0, 0);
+}
+.store-item-icon:hover {
+    color: var(--mainWhite);
+}
+.store-item-value {
+    color: --mainYellow;
+}
+/*end of  store items */
+.search-box {
+    background: var(--mainPink);
+    color: var(--mainBlack);
+}
+  
+/* ligthbox */
+  
+.lightbox-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999;
+    background: rgba(0, 0, 0, 0.6) !important;
+    display: none;
+}
+.show {
+    display: block;
+}
+  
+.lightbox-holder {
+    position: relative;
+}
+.lightbox-item {
+    min-height: 80vh;
+    background: url(../images/Pizza2.jpg) center/cover fixed no-repeat;
+    background-image: url(../images/Pizza3.jpg);
+    border-radius: 0.3rem;
+}
+.lightbox-close {
+    color: var(--mainPink);
+    font-size: 3rem;
+    transition: all 1s ease-in-out;
+    cursor: pointer;
+}
+.lightbox-close:hover {
+    color: var(--mainYellow);
+}
+  
+.lightbox-control {
+    position: absolute;
+    font-size: 4rem;
+    color: var(--mainPink);
+    transition: all 1s linear;
+    cursor: pointer;
+}
+.lightbox-control:hover {
+    color: var(--mainYellow);
+}
+.btnLeft {
+    top: 50%;
+    left: 0;
+    transform: translateX(-60%);
+}
+.btnRight {
+    top: 50%;
+    right: 0;
+    transform: translateX(60%);
+}
