@@ -85,4 +85,24 @@ showTotals();
         document.querySelector('.item-total').textContent = finalMoney;
         document.getElementById('item-count').textContent = total.length;
     }
+
+    $("#delivery").click(function(){
+        $(".delivery").show()
+      });
+      //validate delivery form
+      $("#confirm").click(function(){
+        event.preventDefault()
+        var town=["CBD", "Hurlingham", "Muthaiga", "Ngong Road", "South B", "WestLands", "Thika Road"]
+        var charges=[50,100,150,100,100, 50, 100]
+        var name = $("#name").val();
+        var contact = $("#contact").val();
+        var location = town[$("#location").val()];
+        var street = $("#street").val();
+        var delivery = charges[$("#location").val()];
+        if (name == '' || contact == '' || location == ''|| street== '' ){
+          swal("Error", "Kindly fill all the fields", "error");
+        } else {
+          swal('Hello ' +name + " we have received your order. And will be delivered to "+ street +' Street, ' + location + " in less than 30 Min. Delivery charges: Ksh " + delivery);
+        }
+    });
 })();

@@ -88,51 +88,10 @@
             </div>
             <!--end cart total -->
             <!-- cart buttons -->
-            <div class="container deliver">
-                <p>Do you want your order to be delivered?<br> press the <strong>Delivery</strong>  button else press Checkout</p>
-                <button type="button" class="btn btn-success" id="delivery">Delivery</button>
-                <button type="submit" class="btn btn-success" id="checkout">Checkout</button>
-            </div><br>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <form class="delivery">
-                            <div class="form-group">
-                                <label for="name">Enter your Name:</label>
-                                <input type="text" class="form-control" id="name" placeholder="Enter Your Name" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="new-first-name">Enter your Contact:</label>
-                                <input type="Number" class="form-control" id="contact" placeholder="contact" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="location">Enter your Location:</label>
-                                <select class="form-control" id="location">
-                                    <option class="form-control" value="0">CBD</option>
-                                    <option class="form-control" value="1">Hurlingham</option>
-                                    <option class="form-control" value="2">Muthaiga</option>
-                                    <option class="form-control" value="3">Ngong Road</option>
-                                    <option class="form-control" value="4">South B</option>
-                                    <option class="form-control" value="5">WestLands</option>
-                                    <option class="form-control" value="6">Thika Road</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <label for="Street">Enter your Street/Hse No:</label>
-                                <input type="text" class="form-control" id="street" placeholder="HSE No / Street Name" required>
-                            </div>
-                            <button type="button" class="btn btn-success" id="confirm">Confirm</button>
-                            <div>
-                                <p id="Summary"></p>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-            <!-- <div class="cart-buttons-container mt-3 d-flex justify-content-between">
+            <div class="cart-buttons-container mt-3 d-flex justify-content-between">
               <a href="#" id="clear-cart" class="btn btn-outline-secondary btn-black text-uppercase">clear cart</a>
               <a href="#" class="btn btn-outline-secondary text-uppercase btn-pink">checkout</a>
-            </div> -->
+            </div>
             <!--end of  cart buttons -->
             <!--  -->
           </div>
@@ -447,6 +406,49 @@
 
     </div>
   </div>
+  <!-- Delivery and Checkout -->
+    <div class="container deliver">
+        <p>Do you want your order to be delivered?<br> press the <strong>Delivery</strong>  button else press Checkout</p>
+        <button type="button" class="btn btn-success" id="delivery">Delivery</button>
+        <button type="submit" class="btn btn-success" id="checkout">Checkout</button>
+    </div><br>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <form class="delivery">
+                    <div class="form-group">
+                        <label for="name">Enter your Name:</label>
+                        <input type="text" class="form-control" id="name" placeholder="Enter Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="new-first-name">Enter your Contact:</label>
+                        <input type="Number" class="form-control" id="contact" placeholder="contact" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="location">Enter your Location:</label>
+                        <select class="form-control" id="location">
+                            <option class="form-control" value="0">CBD</option>
+                            <option class="form-control" value="1">Hurlingham</option>
+                            <option class="form-control" value="2">Muthaiga</option>
+                            <option class="form-control" value="3">Ngong Road</option>
+                            <option class="form-control" value="4">South B</option>
+                            <option class="form-control" value="5">WestLands</option>
+                            <option class="form-control" value="6">Thika Road</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="Street">Enter your Street/Hse No:</label>
+                        <input type="text" class="form-control" id="street" placeholder="HSE No / Street Name" required>
+                    </div>
+                    <button type="button" class="btn btn-success" id="confirm">Confirm</button>
+                    <div>
+                        <p id="Summary"></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+  <!-- end of delivery and checkout -->
 </body>
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
