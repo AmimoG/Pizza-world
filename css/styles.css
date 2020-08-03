@@ -163,7 +163,7 @@ body {
 
 .img-container img{
     width: 100%;
-    height: auto;
+    height: 200px;
 }
 .store-img {
     transition: all 1s ease-in-out;
