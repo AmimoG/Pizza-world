@@ -264,3 +264,8 @@ body {
 form{
     display: none;
 }
+
+.jumbotron .form{
+    display: inline-block;
+    text-align: center;
+}
